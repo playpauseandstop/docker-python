@@ -20,5 +20,5 @@ docker build -t playpauseandstop/docker-python .
 To run something, using given image:
 
 ```bash
-docker run --rm -it playpauseandstop/docker-python <cmd>
+docker run --rm -it playpauseandstop/docker-python CMD
 ```
