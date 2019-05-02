@@ -33,3 +33,9 @@ To run something, using given image:
 ```bash
 docker run --rm -it playpauseandstop/docker-python CMD
 ```
+
+To push image (or specific version):
+
+```bash
+docker push playpauseandstop/docker-python:VERSION
+```
