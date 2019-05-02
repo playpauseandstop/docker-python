@@ -1,4 +1,5 @@
 FROM python:3.7.3-slim-stretch
+MAINTAINER Igor Davydenko <iam@igordavydenko.com>
 
 RUN pip install pip==19.1 pre-commit==1.15.2
 
