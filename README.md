@@ -19,6 +19,8 @@ FROM playpauseandstop/docker-python
 - [locales](https://packages.debian.org/stretch/locales) &
   [locales-all](https://packages.debian.org/stretch/locales-all)
 - [make](https://www.gnu.org/software/make) 4.1
+- [nano](https://www.nano-editor.org) 2.7.4
+- [openssh-client](https://packages.debian.org/stretch/openssh-client)
 
 ## Development
 

@@ -1,3 +1,9 @@
+# 1.0.2 (2019-05-14)
+
+- Add [nano](https://www.nano-editor.org/) & 
+  [openssh-client](https://packages.debian.org/stretch/openssh-agent)
+  to the image
+
 # 1.0.1 (2019-05-13)
 
 - Upgrade [pip](https://pip.pypa.io) to 19.1.1
