@@ -1,5 +1,7 @@
 FROM python:3.7.3-slim-stretch
-MAINTAINER Igor Davydenko <iam@igordavydenko.com>
+
+LABEL maintainer="Igor Davydenko <iam@igordavydenko.com>"
+LABEL description="Add poetry, pre-commit, and other dev-tools to official Python slim stretch Docker image."
 
 RUN pip install pip==19.1.1 pre-commit==1.16.1
 
