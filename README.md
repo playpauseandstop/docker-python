@@ -1,12 +1,7 @@
 # docker-python
 
-.. image:: https://img.shields.io/docker/cloud/build/playpauseandstop/docker-python.svg
-    :target: https://hub.docker.com/r/playpauseandstop/docker-python
-    :alt: Docker Cloud Build Status
-
-.. image:: https://img.shields.io/docker/pulls/playpauseandstop/docker-python.svg
-    :target: https://hub.docker.com/r/playpauseandstop/docker-python
-    :alt: Docker Pulls
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/playpauseandstop/docker-python.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/playpauseandstop/docker-python.svg)
 
 Add poetry, pre-commit, and other dev-tools to official Python slim stretch
 Docker image.
