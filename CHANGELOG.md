@@ -1,3 +1,9 @@
+# 1.0.3 (2019-06-12)
+
+- Upgrade [poetry](https://poetry.eustace.io) to 0.12.16
+- Upgrade [pre-commit](https://pre-commit.com) to 1.17.0
+- Pin [virtualenv](https://virtualenv.pypa.io) 16.6.0 version
+
 # 1.0.2 (2019-05-14)
 
 - Add [nano](https://www.nano-editor.org/) & 

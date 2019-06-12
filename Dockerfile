@@ -3,9 +3,9 @@ FROM python:3.7.3-slim-stretch
 LABEL maintainer="Igor Davydenko <iam@igordavydenko.com>"
 LABEL description="Add poetry, pre-commit, and other dev-tools to official Python slim stretch Docker image."
 
-RUN pip install pip==19.1.1 pre-commit==1.16.1
+RUN pip install pip==19.1.1 pre-commit==1.17.0 virtualenv==16.6.0
 
-ENV POETRY_VERSION=0.12.15
+ENV POETRY_VERSION=0.12.16
 RUN apt update && apt upgrade -y && apt install -y curl git locales locales-all make nano openssh-client && apt autoremove -y
 RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 
