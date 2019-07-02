@@ -26,6 +26,32 @@ FROM playpauseandstop/docker-python
 - [nano](https://www.nano-editor.org) 2.7.4
 - [openssh-client](https://packages.debian.org/stretch/openssh-client)
 
+### Python versions
+
+By default, `docker-python` image uses latest stable Python version. But some
+other versions supported as well.
+
+List of supported Python versions are (`<PY_VERSION>` -> base Docker image):
+
+- `py35` -> `python:3.5.7-slim-stretch`
+- `py36` -> `python:3.6.8-slim-stretch`
+- `py37` -> `python:3.7.3-slim-stretch`
+
+To use custom Python version, use tags in your Dockerfile as:
+
+```
+FROM playpauseansdtop/docker-python:<VERSION>-<PY_VERSION>
+```
+
+For example, to use `1.0.3` version of `docker-python` with Python 3.6 base
+image:
+
+```
+FROM playpauseandstop/docker-python:1.0.3-py36
+```
+
+[List of all available tags](https://hub.docker.com/r/playpauseandstop/docker-python/tags)
+
 ## Development
 
 To build an image:
