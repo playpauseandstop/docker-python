@@ -1,4 +1,4 @@
-FROM python:3.6.8-slim-stretch
+FROM python:3.6.9-slim-stretch
 
 LABEL maintainer="Igor Davydenko <iam@igordavydenko.com>"
 LABEL description="Add poetry, pre-commit, and other dev-tools to official Python slim stretch Docker image."
