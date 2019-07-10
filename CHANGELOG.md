@@ -1,4 +1,4 @@
-# 1.1.0 (In Development)
+# 1.1.0 (2019-07-11)
 
 - Base `py37` Python is 3.7.4
 - Base `py36` Python is 3.6.9
