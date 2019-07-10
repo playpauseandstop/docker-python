@@ -1,3 +1,11 @@
+# 1.1.0 (2019-07-11)
+
+- Base `py37` Python is 3.7.4
+- Base `py36` Python is 3.6.9
+- Upgrade [poetry](https://poetry.eustace.io) to 0.12.17
+- Upgrade [virtualenv](https://virtualenv.pypa.io) to 16.6.1
+- Add [tox](https://tox.readthedocs.io/en/latest/) 3.13.2 to the image
+
 # 1.0.3 (2019-06-12)
 
 - Upgrade [poetry](https://poetry.eustace.io) to 0.12.16
@@ -6,7 +14,7 @@
 
 # 1.0.2 (2019-05-14)
 
-- Add [nano](https://www.nano-editor.org/) & 
+- Add [nano](https://www.nano-editor.org/) &
   [openssh-client](https://packages.debian.org/stretch/openssh-client)
   to the image
 
