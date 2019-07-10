@@ -34,6 +34,14 @@ other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image):
 
+#### 1.1.x
+
+- `py35` -> `python:3.5.7-slim-stretch`
+- `py36` -> `python:3.6.9-slim-stretch`
+- `py37` -> `python:3.7.4-slim-stretch`
+
+#### 1.0.3
+
 - `py35` -> `python:3.5.7-slim-stretch`
 - `py36` -> `python:3.6.8-slim-stretch`
 - `py37` -> `python:3.7.3-slim-stretch`
