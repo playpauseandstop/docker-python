@@ -1,3 +1,11 @@
+# 1.2.0 (2019-09-10)
+
+- Install pre-commit & tox to user site packages, not to system site packages
+- Update pip to 19.2.3
+- Update virtualenv to 16.7.5
+- Update pre-commit to 1.18.3
+- Update tox to 3.14.0
+
 # 1.1.0 (2019-07-11)
 
 - Base `py37` Python is 3.7.4

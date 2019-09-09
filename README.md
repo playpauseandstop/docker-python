@@ -14,11 +14,11 @@ FROM playpauseandstop/docker-python
 
 ### Included dev-tools
 
-- [pip](https://pip.pypa.io) 19.1.1
-- [virtualenv](https://virtualenv.pypa.io) 16.6.1
+- [pip](https://pip.pypa.io) 19.2.3
+- [virtualenv](https://virtualenv.pypa.io) 16.7.5
 - [poetry](https://poetry.eustace.io) 0.12.17
-- [pre-commit](https://pre-commit.com) 1.17.0
-- [tox](https://tox.readthedocs.io/) 3.13.2
+- [pre-commit](https://pre-commit.com) 1.18.3
+- [tox](https://tox.readthedocs.io/) 3.14.0
 - [curl](https://curl.haxx.se) 7.52.1
 - [git](https://git-scm.com) 2.11.0
 - [locales](https://packages.debian.org/stretch/locales) &
