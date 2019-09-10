@@ -14,11 +14,11 @@ FROM playpauseandstop/docker-python
 
 ### Included dev-tools
 
-- [pip](https://pip.pypa.io) 19.1.1
-- [virtualenv](https://virtualenv.pypa.io) 16.6.1
+- [pip](https://pip.pypa.io) 19.2.3
+- [virtualenv](https://virtualenv.pypa.io) 16.7.5
 - [poetry](https://poetry.eustace.io) 0.12.17
-- [pre-commit](https://pre-commit.com) 1.17.0
-- [tox](https://tox.readthedocs.io/) 3.13.2
+- [pre-commit](https://pre-commit.com) 1.18.3
+- [tox](https://tox.readthedocs.io/) 3.14.0
 - [curl](https://curl.haxx.se) 7.52.1
 - [git](https://git-scm.com) 2.11.0
 - [locales](https://packages.debian.org/stretch/locales) &
@@ -34,7 +34,7 @@ other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image):
 
-#### 1.1.x
+#### 1.1.x & 1.2.x
 
 - `py35` -> `python:3.5.7-slim-stretch`
 - `py36` -> `python:3.6.9-slim-stretch`
