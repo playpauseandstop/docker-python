@@ -1,3 +1,16 @@
+# 2.0.0 (2019-10-29)
+
+- **Breaking change:** By default poetry will create virtualenv, while install
+  project dependencies
+- Base `py37` Python is 3.7.5
+- Base `py36` Python is 3.6.10
+- Base `py35` Python is 3.5.8
+- Update pip to 19.3.1
+- Update virtualenv to 16.7.7
+- Update pre-commit to 1.20.0
+- As `black==19.10b0` requires `regex`, preinstall [gcc](https://gcc.gnu.org)
+  into the image
+
 # 1.2.0 (2019-09-10)
 
 - Do not install pre-commit & tox into system site-packages
