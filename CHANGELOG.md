@@ -3,8 +3,6 @@
 - **Breaking change:** By default poetry will create virtualenv, while install
   project dependencies
 - Base `py37` Python is 3.7.5
-- Base `py36` Python is 3.6.10
-- Base `py35` Python is 3.5.8
 - Update pip to 19.3.1
 - Update virtualenv to 16.7.7
 - Update pre-commit to 1.20.0
