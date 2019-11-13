@@ -1,3 +1,12 @@
+# 3.0.0 (In Development)
+
+## 3.0.0b0 (2019-11-13)
+
+- **Breaking change:** Make `py38` default image
+- **Breaking change:** Install `poetry==1.0.0b4` for all images
+- **Breaking change:** Use `slim-buster` image for `py35`, `py36`, and `py37`
+- Simplify development by introducing `Makefile`
+
 # 2.0.0 (2019-10-29)
 
 - **Breaking change:** By default poetry will create virtualenv, while install

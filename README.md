@@ -3,8 +3,8 @@
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/playpauseandstop/docker-python.svg)
 ![Docker Pulls](https://img.shields.io/docker/pulls/playpauseandstop/docker-python.svg)
 
-Add poetry, pre-commit, and other dev-tools to official Python slim stretch
-Docker image.
+Add poetry, pre-commit, and other dev-tools to official Python slim Docker
+image.
 
 ## Usage
 
@@ -16,7 +16,7 @@ FROM playpauseandstop/docker-python
 
 - [pip](https://pip.pypa.io) 19.3.1
 - [virtualenv](https://virtualenv.pypa.io) 16.7.7
-- [poetry](https://poetry.eustace.io) 0.12.17
+- [poetry](https://poetry.eustace.io) 1.0.0b4
 - [pre-commit](https://pre-commit.com) 1.20.0
 - [tox](https://tox.readthedocs.io/) 3.14.0
 - [curl](https://curl.haxx.se) 7.52.1
@@ -34,6 +34,10 @@ By default, `docker-python` image uses latest stable Python version. But some
 other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image):
+
+#### 3.0.0
+
+- `py38` -> `python:3.8.0-slim-buster`
 
 #### 2.0.0
 
@@ -73,17 +77,17 @@ FROM playpauseandstop/docker-python:1.0.3-py36
 To build an image:
 
 ```bash
-docker build -t playpauseandstop/docker-python .
+make
 ```
 
 To run something, using given image:
 
 ```bash
-docker run --rm -it playpauseandstop/docker-python CMD
+make CMD="..." run
 ```
 
 To push image (or specific version):
 
 ```bash
-docker push playpauseandstop/docker-python:VERSION
+make VERSION="..." deploy
 ```
