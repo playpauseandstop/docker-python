@@ -4,7 +4,8 @@
 
 - **Breaking change:** Make `py38` default image
 - **Breaking change:** Install `poetry==1.0.0b4` for all images
-- **Breaking change:** Use `slim-buster` image for `py35`, `py36`, and `py37`
+- **Breaking change:** Use `slim-buster` image for `py37` & `py36` as well
+- **Breaking change:** Drop support of `py35` images
 - Simplify development by introducing `Makefile`
 
 # 2.0.0 (2019-10-29)

@@ -2,12 +2,13 @@
 
 DOCKER ?= docker
 IMAGE ?= playpauseandstop/docker-python
+VERSION ?= latest
 
 all: build
 
 build: .build
 .build: Dockerfile
-	$(DOCKER) build -t $(IMAGE) .
+	$(DOCKER) build -t $(IMAGE):$(VERSION) .
 	touch $@
 
 deploy:
