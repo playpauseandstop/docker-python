@@ -1,3 +1,13 @@
+# 3.0.0 (In Development)
+
+## 3.0.0b0 (2019-11-13)
+
+- **Breaking change:** Make `py38` default image
+- **Breaking change:** Install `poetry==1.0.0b4` for all images
+- **Breaking change:** Use `slim-buster` image for `py37` & `py36` as well
+- **Breaking change:** Drop support of `py35` images
+- Simplify development by introducing `Makefile`
+
 # 2.0.0 (2019-10-29)
 
 - **Breaking change:** By default poetry will create virtualenv, while install
@@ -11,7 +21,7 @@
 
 # 1.2.0 (2019-09-10)
 
-- Do not install pre-commit & tox into system site-packages
+- Install pre-commit & tox to user site packages, not to system site packages
 - Update pip to 19.2.3
 - Update virtualenv to 16.7.5
 - Update pre-commit to 1.18.3
