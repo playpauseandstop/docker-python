@@ -1,5 +1,10 @@
 # 3.0.0 (In Development)
 
+## 3.0.0b1 (2019-11-16)
+
+- Update poetry to 1.0.0b5
+- Update tox to 3.14.1
+
 ## 3.0.0b0 (2019-11-13)
 
 - **Breaking change:** Make `py38` default image
