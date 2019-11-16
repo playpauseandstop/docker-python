@@ -16,7 +16,7 @@ FROM playpauseandstop/docker-python:3.0.0b0
 
 - [pip](https://pip.pypa.io) 19.3.1
 - [virtualenv](https://virtualenv.pypa.io) 16.7.7
-- [poetry](https://poetry.eustace.io) 1.0.0b4
+- [poetry](https://poetry.eustace.io) 1.0.0b5
 - [pre-commit](https://pre-commit.com) 1.20.0
 - [tox](https://tox.readthedocs.io/) 3.14.0
 - [curl](https://curl.haxx.se) 7.64.0
