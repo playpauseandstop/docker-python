@@ -15,8 +15,8 @@ FROM playpauseandstop/docker-python:3.0.0b0
 ### Included dev-tools
 
 - [pip](https://pip.pypa.io) 19.3.1
-- [virtualenv](https://virtualenv.pypa.io) 16.7.7
-- [poetry](https://poetry.eustace.io) 1.0.0b5
+- [virtualenv](https://virtualenv.pypa.io) 16.7.8
+- [poetry](https://poetry.eustace.io) 1.0.0b8
 - [pre-commit](https://pre-commit.com) 1.20.0
 - [tox](https://tox.readthedocs.io/) 3.14.0
 - [curl](https://curl.haxx.se) 7.64.0
@@ -35,7 +35,7 @@ other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image):
 
-#### 3.0.0b0
+#### 3.0.0bX
 
 - `py38` -> `python:3.8.0-slim-buster`
 - `py37` -> `python:3.7.5-slim-buster`
@@ -47,7 +47,7 @@ List of supported Python versions are (`<PY_VERSION>` -> base Docker image):
 - `py36` -> `python:3.6.9-slim-stretch`
 - `py35` -> `python:3.5.7-slim-stretch`
 
-#### 1.1.x & 1.2.x
+#### 1.1.X & 1.2.X
 
 - `py37` -> `python:3.7.4-slim-stretch`
 - `py36` -> `python:3.6.9-slim-stretch`

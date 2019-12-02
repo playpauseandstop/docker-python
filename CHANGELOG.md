@@ -1,5 +1,10 @@
 # 3.0.0 (In Development)
 
+## 3.0.0b2 (2019-12-02)
+
+- Update poetry to 1.0.0b8
+- Update virtualenv to 16.7.8
+
 ## 3.0.0b1 (2019-11-16)
 
 - Update poetry to 1.0.0b5
