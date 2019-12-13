@@ -1,4 +1,12 @@
-# 3.0.0 (In Development)
+# 3.0.0 (2019-12-13)
+
+- Update poetry to 1.0.0
+- Update tox to 3.14.2
+- Final **3.0.0** release, which highlights:
+  - `py38` as default image
+  - Drop `py35` image
+  - Use `slim-buster` images for `py36`, `py37` & `py38`
+  - Install poetry 1.0.0
 
 ## 3.0.0b2 (2019-12-02)
 
