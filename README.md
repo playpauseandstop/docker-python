@@ -9,16 +9,16 @@ image.
 ## Usage
 
 ```
-FROM playpauseandstop/docker-python:3.0.0b0
+FROM playpauseandstop/docker-python:3.0.0
 ```
 
 ### Included dev-tools
 
 - [pip](https://pip.pypa.io) 19.3.1
-- [virtualenv](https://virtualenv.pypa.io) 16.7.8
-- [poetry](https://poetry.eustace.io) 1.0.0b8
+- [poetry](https://poetry.eustace.io) 1.0.0
 - [pre-commit](https://pre-commit.com) 1.20.0
-- [tox](https://tox.readthedocs.io/) 3.14.0
+- [tox](https://tox.readthedocs.io/) 3.14.2
+- [virtualenv](https://virtualenv.pypa.io) 16.7.8
 - [curl](https://curl.haxx.se) 7.64.0
 - [git](https://git-scm.com) 2.20.1
 - [locales](https://packages.debian.org/stretch/locales) &
