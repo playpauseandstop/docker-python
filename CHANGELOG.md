@@ -1,3 +1,13 @@
+# 3.1.0 (2020-01-17)
+
+- Update `py38` image to Python 3.8.1
+- Update `py37` image to Python 3.7.6
+- Update `py36` image to Python 3.6.10
+- Update poetry to 1.0.2
+- Update pre-commit to 1.21.0
+- Update tox to 3.14.3
+- Update virtualenv to 16.7.9
+
 # 3.0.0 (2019-12-13)
 
 - Update poetry to 1.0.0
