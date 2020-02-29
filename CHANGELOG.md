@@ -1,3 +1,12 @@
+# 3.2.0 (2020-03-01)
+
+- Update `py38` image to Python 3.8.2
+- Update poetry to 1.0.5
+- Update pip to 20.0.2
+- Update pre-commit to 2.1.1
+- Update tox to 3.14.5
+- Update virtualenv to 20.0.7
+
 # 3.1.0 (2020-01-17)
 
 - Update `py38` image to Python 3.8.1
