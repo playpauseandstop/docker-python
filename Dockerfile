@@ -1,4 +1,4 @@
-FROM python:3.8.1-slim-buster
+FROM python:3.8.2-slim-buster
 
 LABEL maintainer="Igor Davydenko <iam@igordavydenko.com>"
 LABEL description="Add poetry, pre-commit, and other dev-tools to official Python slim Docker image."
@@ -7,9 +7,9 @@ RUN apt update -qq && apt upgrade -y && apt install -y curl gcc git locales loca
 
 ENV PATH="/root/.local/bin:/root/.poetry/bin:${PATH}"
 
-RUN pip install pip==19.3.1 pre-commit==1.21.0 tox==3.14.3 virtualenv==16.7.9
+RUN pip install pip==20.0.2 pre-commit==2.1.1 tox==3.14.5 virtualenv==20.0.7
 
-ENV POETRY_VERSION=1.0.2
+ENV POETRY_VERSION=1.0.5
 RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 
 WORKDIR /app
