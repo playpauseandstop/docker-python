@@ -2,21 +2,17 @@
 
 DOCKER ?= docker
 IMAGE ?= playpauseandstop/docker-python
-VERSION ?= latest
+TAG ?= latest
 
 all: build
 
 build: .build
 .build: Dockerfile
-	$(DOCKER) build -t $(IMAGE):$(VERSION) .
+	$(DOCKER) build -t $(IMAGE):$(TAG) .
 	touch $@
 
-deploy:
-ifeq ($(VERSION),)
-	$(DOCKER) push $(IMAGE):$(VERSION)
-else
-	$(DOCKER) push $(IMAGE)
-endif
+deploy: build
+	$(DOCKER) push $(IMAGE):$(TAG)
 
 run: build
-	$(DOCKER) run --rm -it $(IMAGE) $(CMD)
+	$(DOCKER) run --rm -it $(IMAGE):$(TAG) $(ARGS)

@@ -1,3 +1,15 @@
+# 3.3.0 (2020-05-25)
+
+- Update `py38` image to Python 3.8.3
+- Update `py37` image to Python 3.7.7
+- Update pip to 20.1.1
+- Update pre-commit to 2.4.0
+- Update tox to 3.15.1
+- Update virtualenv to 20.0.21
+- Add [g++](https://gcc.gnu.org) 8.3.0
+- Add [rsync](https://rsync.samba.net) 3.1.3
+- Add [gettext](https://www.gnu.org/software/gettext/) 0.19.8.1
+
 # 3.2.0 (2020-03-01)
 
 - Update `py38` image to Python 3.8.2
