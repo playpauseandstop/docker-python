@@ -8,8 +8,8 @@ image.
 
 ## Usage
 
-```
-FROM playpauseandstop/docker-python:3.2.0
+```dockerfile
+FROM playpauseandstop/docker-python:3.3.0
 ```
 
 ### Included dev-tools
