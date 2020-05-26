@@ -1,4 +1,4 @@
-# 3.3.0 (2020-05-25)
+# 3.3.0 (2020-05-26)
 
 - Update `py38` image to Python 3.8.3
 - Update `py37` image to Python 3.7.7
