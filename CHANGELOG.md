@@ -1,3 +1,9 @@
+# 3.5.0 (2020-07-23)
+
+- Update `py38` image to Python 3.8.5
+- Update poetry to 1.0.10
+- Update tox to 3.18.0
+
 # 3.4.0 (2020-07-15)
 
 - Update `py38` image to Python 3.8.4
