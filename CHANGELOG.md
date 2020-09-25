@@ -1,3 +1,13 @@
+# 3.6.0 (2020-09-25)
+
+- Update `py38` image to Python 3.8.6
+- Update `py37` image to Python 3.7.9
+- Update `py36` image to Python 3.6.12
+- Update pip to 20.2.3
+- Update pre-commit to 2.7.1
+- Update tox to 3.20.0
+- Update virtualenv to 20.0.31
+
 # 3.5.0 (2020-07-23)
 
 - Update `py38` image to Python 3.8.5

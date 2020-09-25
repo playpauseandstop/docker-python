@@ -9,16 +9,16 @@ image.
 ## Usage
 
 ```dockerfile
-FROM playpauseandstop/docker-python:3.5.0
+FROM playpauseandstop/docker-python:3.6.0
 ```
 
 ### Included dev-tools
 
-- [pip](https://pip.pypa.io) 20.1.1
+- [pip](https://pip.pypa.io) 20.2.3
 - [poetry](https://poetry.eustace.io) 1.0.10
-- [pre-commit](https://pre-commit.com) 2.6.0
-- [tox](https://tox.readthedocs.io/) 3.18.0
-- [virtualenv](https://virtualenv.pypa.io) 20.0.27
+- [pre-commit](https://pre-commit.com) 2.7.1
+- [tox](https://tox.readthedocs.io/) 3.20.0
+- [virtualenv](https://virtualenv.pypa.io) 20.0.31
 - [curl](https://curl.haxx.se) 7.64.0
 - [git](https://git-scm.com) 2.20.1
 - [locales](https://packages.debian.org/stretch/locales) &
@@ -36,6 +36,12 @@ By default, `docker-python` image uses latest stable Python version. But some
 other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image):
+
+#### 3.6.0
+
+- `py38` -> `python:3.8.6-slim-buster`
+- `py37` -> `python:3.7.9-slim-buster`
+- `py36` -> `python:3.6.12-slim-buster`
 
 #### 3.5.0
 
