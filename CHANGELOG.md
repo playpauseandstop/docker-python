@@ -1,3 +1,13 @@
+# 4.0.0 (2020-11-02)
+
+- **BREAKING CHANGE:** By default use Python 3.9.0 for base image
+- Add new `py39` flavour
+- Update pip to 20.2.4
+- Update poetry to 1.1.4
+- Update pre-commit to 2.8.2
+- Update tox to 3.20.1
+- Update virtualenv to 20.1.0
+
 # 3.6.0 (2020-09-25)
 
 - Update `py38` image to Python 3.8.6
