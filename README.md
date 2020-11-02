@@ -9,16 +9,16 @@ image.
 ## Usage
 
 ```dockerfile
-FROM playpauseandstop/docker-python:3.6.0
+FROM playpauseandstop/docker-python:4.0.0
 ```
 
 ### Included dev-tools
 
-- [pip](https://pip.pypa.io) 20.2.3
-- [poetry](https://poetry.eustace.io) 1.0.10
-- [pre-commit](https://pre-commit.com) 2.7.1
-- [tox](https://tox.readthedocs.io/) 3.20.0
-- [virtualenv](https://virtualenv.pypa.io) 20.0.31
+- [pip](https://pip.pypa.io) 20.2.4
+- [poetry](https://python-poetry.org) 1.1.4
+- [pre-commit](https://pre-commit.com) 2.8.2
+- [tox](https://tox.readthedocs.io/) 3.20.1
+- [virtualenv](https://virtualenv.pypa.io) 20.1.0
 - [curl](https://curl.haxx.se) 7.64.0
 - [git](https://git-scm.com) 2.20.1
 - [locales](https://packages.debian.org/stretch/locales) &
@@ -37,6 +37,11 @@ other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image):
 
+#### 4.0.0
+
+- `py39` -> `python:3.9.0-slim-buster`
+- `py36`, `py37` & `py38` use same base image as in `3.6.0`
+
 #### 3.6.0
 
 - `py38` -> `python:3.8.6-slim-buster`
@@ -46,7 +51,7 @@ List of supported Python versions are (`<PY_VERSION>` -> base Docker image):
 #### 3.5.0
 
 - `py38` -> `python:3.8.5-slim-buster`
-- `py37` & `py36` uses same as in `3.4.0`
+- `py37` & `py36` use same base image as in `3.4.0`
 
 #### 3.4.0
 
@@ -58,12 +63,12 @@ List of supported Python versions are (`<PY_VERSION>` -> base Docker image):
 
 - `py38` -> `python:3.8.3-slim-buster`
 - `py37` -> `python:3.7.7-slim-buster`
-- `py36` uses same version as in `3.1.0`
+- `py36` uses same base image as in `3.1.0`
 
 #### 3.2.0
 
 - `py38` -> `python:3.8.2-slim-buster`
-- `py37` & `py36` uses same version as in `3.1.0`
+- `py37` & `py36` use same base image as in `3.1.0`
 
 #### 3.1.0
 
