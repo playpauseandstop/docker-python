@@ -14,11 +14,11 @@ FROM playpauseandstop/docker-python:4.0.0
 
 ### Included dev-tools
 
-- [pip](https://pip.pypa.io) 20.2.4
+- [pip](https://pip.pypa.io) 20.3.3
 - [poetry](https://python-poetry.org) 1.1.4
-- [pre-commit](https://pre-commit.com) 2.8.2
+- [pre-commit](https://pre-commit.com) 2.9.3
 - [tox](https://tox.readthedocs.io/) 3.20.1
-- [virtualenv](https://virtualenv.pypa.io) 20.1.0
+- [virtualenv](https://virtualenv.pypa.io) 20.2.2
 - [curl](https://curl.haxx.se) 7.64.0
 - [git](https://git-scm.com) 2.20.1
 - [locales](https://packages.debian.org/stretch/locales) &
@@ -36,6 +36,12 @@ By default, `docker-python` image uses latest stable Python version. But some
 other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image):
+
+#### 4.1.0
+
+- `py39` -> `python:3.9.1-slim-buster`
+- `py38` -> `python:3.8.7-slim-buster`
+- `py36` & `py37` use same base image as in `3.6.0`
 
 #### 4.0.0
 

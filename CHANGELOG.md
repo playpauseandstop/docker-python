@@ -1,3 +1,11 @@
+# 4.1.0 (2021-01-05)
+
+- Update `py39` image to Python 3.9.1
+- Update `py38` image to Python 3.8.7
+- Update pip to 20.3.3
+- Update pre-commit to 2.9.3
+- Update virtualenv to 20.2.2
+
 # 4.0.0 (2020-11-02)
 
 - **BREAKING CHANGE:** By default use Python 3.9.0 for base image

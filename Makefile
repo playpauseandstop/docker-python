@@ -14,5 +14,8 @@ build: .build
 deploy: build
 	$(DOCKER) push $(IMAGE):$(TAG)
 
+list-versions:
+	pip-latest-release pip pre-commit tox virtualenv
+
 run: build
 	$(DOCKER) run --rm -it $(IMAGE):$(TAG) $(ARGS)
