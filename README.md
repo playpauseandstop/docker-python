@@ -9,21 +9,21 @@ image.
 ## Usage
 
 ```dockerfile
-FROM playpauseandstop/docker-python:4.0.0
+FROM playpauseandstop/docker-python:4.1.0
 ```
 
 ### Included dev-tools
 
-- [pip](https://pip.pypa.io) 20.3.3
+- [pip](https://pip.pypa.io) 21.0.1
 - [poetry](https://python-poetry.org) 1.1.4
-- [pre-commit](https://pre-commit.com) 2.9.3
-- [tox](https://tox.readthedocs.io/) 3.20.1
-- [virtualenv](https://virtualenv.pypa.io) 20.2.2
+- [pre-commit](https://pre-commit.com) 2.10.1
+- [tox](https://tox.readthedocs.io/) 3.22.0
+- [virtualenv](https://virtualenv.pypa.io) 20.4.2
 - [curl](https://curl.haxx.se) 7.64.0
+- [gcc & g++](https://gcc.gnu.org) 8.3.0
 - [git](https://git-scm.com) 2.20.1
 - [locales](https://packages.debian.org/stretch/locales) &
   [locales-all](https://packages.debian.org/stretch/locales-all)
-- [gcc & g++](https://gcc.gnu.org) 8.3.0
 - [make](https://www.gnu.org/software/make) 4.2.1
 - [nano](https://www.nano-editor.org) 3.2
 - [gettext](https://www.gnu.org/software/gettext) 0.19.8.1

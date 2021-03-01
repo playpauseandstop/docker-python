@@ -1,3 +1,11 @@
+# 4.2.0 (In Development)
+
+- Update `py39` image to Python 3.9.2
+- Update pip to 21.0.1
+- Update pre-commit to 20.10.1
+- Update tox to 3.22.0
+- Update virtualenv to 20.4.2
+
 # 4.1.0 (2021-01-05)
 
 - Update `py39` image to Python 3.9.1
