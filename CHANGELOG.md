@@ -1,10 +1,15 @@
 # 4.2.0 (In Development)
 
-- Update `py39` image to Python 3.9.2
-- Update pip to 21.0.1
-- Update pre-commit to 20.10.1
-- Update tox to 3.22.0
-- Update virtualenv to 20.4.2
+- Update `py39` image to Python 3.9.4
+- Update `py38` image to Python 3.8.9
+- Update `py37` image to Python 3.7.10
+- Update `py36` image to Python 3.6.13
+- Update poetry to 1.1.6
+- Install poetry in different Docker layer (`poetry-base`)
+- Update pip to 21.1.1
+- Update pre-commit to 2.12.1
+- Update tox to 3.23.0
+- Update virtualenv to 20.4.4
 
 # 4.1.0 (2021-01-05)
 
