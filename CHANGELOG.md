@@ -1,3 +1,10 @@
+# 4.3.0 (In Development)
+
+- Update `py39` image to Python 3.9.5
+- Update `py38` image to Python 3.8.10
+- Update tox to 3.23.1
+- Update virtualenv to 20.4.6
+
 # 4.2.0 (2021-05-03)
 
 - Update `py39` image to Python 3.9.4
