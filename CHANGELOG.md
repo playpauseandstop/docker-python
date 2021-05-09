@@ -1,4 +1,4 @@
-# 4.3.0 (In Development)
+# 4.3.0 (2021-05-09)
 
 - Update `py39` image to Python 3.9.5
 - Update `py38` image to Python 3.8.10

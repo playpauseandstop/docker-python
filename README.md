@@ -9,7 +9,7 @@ image.
 ## Usage
 
 ```dockerfile
-FROM playpauseandstop/docker-python:4.2.0
+FROM playpauseandstop/docker-python:4.3.0
 ```
 
 ### Included dev-tools
