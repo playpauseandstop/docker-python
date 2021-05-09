@@ -1,4 +1,5 @@
-FROM python:3.8.9-slim-buster AS python-base
+# TODO: Find out whether it possible to use "faster" base Python image
+FROM python:3.8.10-slim-buster as python-base
 
 LABEL maintainer="Igor Davydenko <iam@igordavydenko.com>"
 LABEL description="Add poetry, pre-commit, and other dev-tools to official Python slim Docker image."
@@ -44,8 +45,8 @@ RUN apt install -y ${ADDITIONAL_APPS} && apt autoremove -y
 # ```
 ENV PIP_VERSION "21.1.1"
 ENV PRE_COMMIT_VERSION "2.12.1"
-ENV TOX_VERSION "3.23.0"
-ENV VIRTUALENV_VERSION "20.4.4"
+ENV TOX_VERSION "3.23.1"
+ENV VIRTUALENV_VERSION "20.4.6"
 
 RUN pip install \
     pip==${PIP_VERSION} \

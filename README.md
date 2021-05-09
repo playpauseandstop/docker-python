@@ -9,7 +9,7 @@ image.
 ## Usage
 
 ```dockerfile
-FROM playpauseandstop/docker-python:4.2.0
+FROM playpauseandstop/docker-python:4.3.0
 ```
 
 ### Included dev-tools
@@ -35,7 +35,13 @@ FROM playpauseandstop/docker-python:4.2.0
 By default, `docker-python` image uses latest stable Python version. But some
 other versions supported as well.
 
-List of supported Python versions are (`<PY_VERSION>` -> base Docker image):
+List of supported Python versions are (`<PY_VERSION>` -> base Docker image)
+
+#### 4.3.0
+
+- `py39` -> `python:3.9.5-slim-buster`
+- `py38` -> `python:3.8.10-slim-buster`
+- `py37` & `py36` use same base image as in `4.2.0`
 
 #### 4.2.0
 
