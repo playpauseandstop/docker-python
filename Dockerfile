@@ -15,9 +15,9 @@ ENV PATH "${POETRY_HOME}/bin:${PATH}"
 # Install poetry at one stage
 FROM python-base as poetry-base
 
-ENV POETRY_VERSION "1.1.6"
+ENV POETRY_VERSION "1.1.10"
 RUN apt install -y build-essential curl
-RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/install-poetry.py | python
 RUN poetry --version
 
 # Install dev tools at another stage
@@ -43,10 +43,10 @@ RUN apt install -y ${ADDITIONAL_APPS} && apt autoremove -y
 # ```bash
 # pip-latest-release pip pre-commit tox virtualenv
 # ```
-ENV PIP_VERSION "21.1.1"
-ENV PRE_COMMIT_VERSION "2.12.1"
-ENV TOX_VERSION "3.23.1"
-ENV VIRTUALENV_VERSION "20.4.6"
+ENV PIP_VERSION "21.2.4"
+ENV PRE_COMMIT_VERSION "2.15.0"
+ENV TOX_VERSION "3.24.4"
+ENV VIRTUALENV_VERSION "20.8.1"
 
 RUN pip install \
     pip==${PIP_VERSION} \
