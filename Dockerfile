@@ -1,5 +1,5 @@
 # TODO: Find out whether it possible to use "faster" base Python image
-FROM python:3.9.6-slim-buster as python-base
+FROM python:3.9.7-slim-buster as python-base
 
 LABEL maintainer="Igor Davydenko <iam@igordavydenko.com>"
 LABEL description="Add poetry, pre-commit, and other dev-tools to official Python slim Docker image."
