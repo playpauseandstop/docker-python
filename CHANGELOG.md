@@ -1,3 +1,13 @@
+# 4.4.0 (In Development)
+
+- Update `py39` image to Python 3.9.7
+- Update poetry to 1.1.10
+- Use `install-python.py` script instead of `get-poetry.py` to install poetry
+- Update pip to 21.2.4
+- Update pre-commit to 2.15.0
+- Update tox to 3.24.4
+- Update virtualenv to 20.8.8
+
 # 4.3.0 (2021-05-09)
 
 - Update `py39` image to Python 3.9.5
