@@ -1,8 +1,7 @@
-# TODO: Find out whether it possible to use "faster" base Python image
 FROM python:3.10.0-slim-bullseye as python-base
 
 LABEL maintainer="Igor Davydenko <iam@igordavydenko.com>"
-LABEL description="Add poetry, pre-commit, and other dev-tools installed via pipx to official Python slim Docker image."
+LABEL description="Add poetry, pre-commit and tox installed via pipx as well as other system dev tools to official Python slim Docker image."
 
 # Install additional dev dependencies and ensure to use latest system versions
 RUN apt-get update -qq \
@@ -24,7 +23,8 @@ RUN apt-get update -qq \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get autoremove -y
 
-# Update path to include `/root/.local/bin`
+# Update path to include `/root/.local/bin` for `pip install --user ...` and
+# `pipx` needs
 ENV PATH="/root/.local/bin:${PATH}"
 
 # Update pip to latest version, install pipx & virtualen into user directory,
