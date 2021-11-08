@@ -1,12 +1,23 @@
-# 4.4.0 (In Development)
+# 5.0.0 (2021-11-08)
 
+Update default Python version to use to 3.10.0, as well as use latest `slim-bullseye` image instead of `slim-buster`.
+
+On top of that, install poetry, pre-commit, and tox via pipx, while still install latest pip, pipx, and virtualenv via pip.
+
+**Full list of updates:**
+
+- Provide `py310` image based on `python:3.10.0-slim-bullseye`
 - Update `py39` image to Python 3.9.7
-- Update poetry to 1.1.10
-- Use `install-python.py` script instead of `get-poetry.py` to install poetry
-- Update pip to 21.2.4
+- Update `py38` image to Python 3.8.12
+- Update `py37` image to Python 3.7.12
+- Update `py36` image to Python 3.6.15
+- Update pip to 21.3.1
+- Install pipx 0.16.4
+- Update poetry to 1.1.11
 - Update pre-commit to 2.15.0
-- Update tox to 3.24.4
-- Update virtualenv to 20.8.8
+- Update tox to 3.24.2
+- Update virtualenv to 20.10.0
+- Update versions of all system dev tools to ones, which used in Debian Bullseye
 
 # 4.3.0 (2021-05-09)
 

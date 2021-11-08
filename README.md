@@ -19,16 +19,16 @@ FROM playpauseandstop/docker-python:5.0.0
 - [pre-commit](https://pre-commit.com) 2.15.0
 - [tox](https://tox.readthedocs.io/) 3.24.2
 - [virtualenv](https://virtualenv.pypa.io) 20.10.0
-- [curl](https://curl.haxx.se) 7.64.0
-- [gcc & g++](https://gcc.gnu.org) 8.3.0
-- [git](https://git-scm.com) 2.20.1
+- [curl](https://curl.haxx.se) 7.74.0
+- [gcc & g++](https://gcc.gnu.org) 10.2.1
+- [git](https://git-scm.com) 2.30.2
 - [locales](https://packages.debian.org/stretch/locales) &
   [locales-all](https://packages.debian.org/stretch/locales-all)
-- [make](https://www.gnu.org/software/make) 4.2.1
-- [nano](https://www.nano-editor.org) 3.2
-- [gettext](https://www.gnu.org/software/gettext) 0.19.8.1
-- [openssh-client](https://packages.debian.org/stretch/openssh-client) 7.9p1
-- [rsync](https://rsync.samba.org) 3.1.3
+- [make](https://www.gnu.org/software/make) 4.3
+- [nano](https://www.nano-editor.org) 5.4
+- [gettext](https://www.gnu.org/software/gettext) 0.21
+- [openssh-client](https://packages.debian.org/stretch/openssh-client) 8.4p1
+- [rsync](https://rsync.samba.org) 3.2.3
 
 ### Python versions
 
@@ -39,7 +39,7 @@ List of supported Python versions are (`<PY_VERSION>` -> base Docker image)
 #### 5.0.0
 
 - `py310` -> `python:3.10.0-slim-bullseye`
-- `py39` -> `python:3.9.8-slim-bullseye`
+- `py39` -> `python:3.9.7-slim-bullseye`
 - `py38` -> `python:3.8.12-slim-bullseye`
 - `py37` -> `python:3.7.12-slim-bullseye`
 - `py36` -> `python:3.6.15-slim-bullseye`
