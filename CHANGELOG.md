@@ -1,3 +1,7 @@
+# 5.0.1 (2021-11-09)
+
+Fix "Auto Create Release Tag" workflow by providing [badabump](https://github.com/playpauseandstop/badabump) config.
+
 # 5.0.0 (2021-11-08)
 
 Update default Python version to use to 3.10.0, as well as use latest `slim-bullseye` image instead of `slim-buster`.

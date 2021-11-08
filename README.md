@@ -8,7 +8,7 @@ Add poetry, pre-commit and tox installed via pipx as well as other system dev to
 ## Usage
 
 ```dockerfile
-FROM playpauseandstop/docker-python:5.0.0
+FROM playpauseandstop/docker-python:5.0.1
 ```
 
 ### Included dev-tools
@@ -35,6 +35,10 @@ FROM playpauseandstop/docker-python:5.0.0
 By default, `docker-python` image uses latest stable Python version. But some other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image)
+
+#### 5.0.1
+
+Use same base images as in `5.0.0`.
 
 #### 5.0.0
 
