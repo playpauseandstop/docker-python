@@ -3,7 +3,7 @@
 [![CI](https://github.com/playpauseandstop/docker-python/actions/workflows/ci.yml/badge.svg)](https://github.com/playpauseandstop/docker-python/actions/workflows/ci.yml)
 [![Docker Pulls](https://img.shields.io/docker/pulls/playpauseandstop/docker-python.svg)](https://hub.docker.com/r/playpauseandstop/docker-python)
 
-Add poetry, pre-commit, and other dev-tools installed via pipx to official Python slim Docker image.
+Add poetry, pre-commit and tox installed via pipx as well as other system dev tools to official Python slim Docker image.
 
 ## Usage
 
