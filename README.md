@@ -3,22 +3,23 @@
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/playpauseandstop/docker-python.svg)
 ![Docker Pulls](https://img.shields.io/docker/pulls/playpauseandstop/docker-python.svg)
 
-Add poetry, pre-commit, and other dev-tools to official Python slim Docker
-image.
+Add poetry, pre-commit, and other dev-tools installed via pipx to official
+Python slim Docker image.
 
 ## Usage
 
 ```dockerfile
-FROM playpauseandstop/docker-python:4.3.0
+FROM playpauseandstop/docker-python:5.0.0
 ```
 
 ### Included dev-tools
 
-- [pip](https://pip.pypa.io) 21.1.1
-- [poetry](https://python-poetry.org) 1.1.6
-- [pre-commit](https://pre-commit.com) 2.12.1
-- [tox](https://tox.readthedocs.io/) 3.23.0
-- [virtualenv](https://virtualenv.pypa.io) 20.4.4
+- [pip](https://pip.pypa.io) 21.3.1
+- [pipx](https://pypa.github.io/pipx/) 0.16.4
+- [poetry](https://python-poetry.org) 1.1.11
+- [pre-commit](https://pre-commit.com) 2.15.0
+- [tox](https://tox.readthedocs.io/) 3.24.2
+- [virtualenv](https://virtualenv.pypa.io) 20.10.0
 - [curl](https://curl.haxx.se) 7.64.0
 - [gcc & g++](https://gcc.gnu.org) 8.3.0
 - [git](https://git-scm.com) 2.20.1
@@ -36,6 +37,14 @@ By default, `docker-python` image uses latest stable Python version. But some
 other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image)
+
+#### 5.0.0
+
+- `py310` -> `python:3.10.0-slim-bullseye`
+- `py39` -> `python:3.9.8-slim-bullseye`
+- `py38` -> `python:3.8.12-slim-bullseye`
+- `py37` -> `python:3.7.12-slim-bullseye`
+- `py36` -> `python:3.6.15-slim-bullseye`
 
 #### 4.3.0
 
