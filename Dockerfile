@@ -1,61 +1,52 @@
-# TODO: Find out whether it possible to use "faster" base Python image
-FROM python:3.7.10-slim-buster as python-base
+FROM python:3.7.12-slim-bullseye as python-base
 
 LABEL maintainer="Igor Davydenko <iam@igordavydenko.com>"
-LABEL description="Add poetry, pre-commit, and other dev-tools to official Python slim Docker image."
+LABEL description="Add poetry, pre-commit and tox installed via pipx as well as other system dev tools to official Python slim Docker image."
 
-# Ensure to use latest system versions
-RUN apt update -qq && apt upgrade -y && apt autoremove -y
+# Install additional dev dependencies and ensure to use latest system versions
+RUN apt-get update -qq \
+    && apt-get upgrade -y \
+    && apt-get autoremove -y \
+    && apt-get install --no-install-recommends -y \
+        curl \
+        g++ \
+        gcc \
+        gettext \
+        git \
+        locales \
+        locales-all \
+        make \
+        nano \
+        openssh-client \
+        rsync \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get autoremove -y
 
-# Global poetry setup
-ENV POETRY_HOME "/opt/poetry"
-ENV POETRY_NO_INTERACTION "1"
-ENV PATH "${POETRY_HOME}/bin:${PATH}"
+# Update path to include `/root/.local/bin` for `pip install --user ...` and
+# `pipx` needs
+ENV PATH="/root/.local/bin:${PATH}"
 
-# Install poetry at one stage
-FROM python-base as poetry-base
-
-ENV POETRY_VERSION "1.1.6"
-RUN apt install -y build-essential curl
-RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
-RUN poetry --version
-
-# Install dev tools at another stage
-FROM python-base as development-base
-
-# Additonal applications to install
-ENV ADDITIONAL_APPS \
-    curl \
-    g++ \
-    gcc \
-    gettext \
-    git \
-    locales \
-    locales-all \
-    make \
-    nano \
-    openssh-client \
-    rsync
-RUN apt install -y ${ADDITIONAL_APPS} && apt autoremove -y
-
+# Update pip to latest version, install pipx & virtualen into user directory,
+# and install additional dev-tools via pipx into `~/.local`
+#
 # To check latest versions,
 #
 # ```bash
-# pip-latest-release pip pre-commit tox virtualenv
+# pip-latest-release pip pipx poetry pre-commit tox virtualenv
 # ```
-ENV PIP_VERSION "21.1.1"
-ENV PRE_COMMIT_VERSION "2.12.1"
-ENV TOX_VERSION "3.23.1"
-ENV VIRTUALENV_VERSION "20.4.6"
+ENV PIP_VERSION="21.3.1"
+ENV PIPX_VERSION="0.16.4"
+ENV POETRY_VERSION="1.1.11"
+ENV PRE_COMMIT_VERSION="2.15.0"
+ENV TOX_VERSION="3.24.4"
+ENV VIRTUALENV_VERSION="20.10.0"
 
-RUN pip install \
-    pip==${PIP_VERSION} \
-    pre-commit==${PRE_COMMIT_VERSION} \
-    tox==${TOX_VERSION} \
-    virtualenv==${VIRTUALENV_VERSION}
-
-# Copy poetry from previous stage
-COPY --from=poetry-base ${POETRY_HOME} ${POETRY_HOME}
+RUN python3 -m pip install --no-cache-dir pip==${PIP_VERSION} \
+    && python3 -m pip install --no-cache-dir --user pipx==${PIPX_VERSION} virtualenv==${VIRTUALENV_VERSION} \
+    && python3 -m pipx install --pip-args=--no-cache-dir poetry==${POETRY_VERSION} \
+    && python3 -m pipx install --pip-args=--no-cache-dir pre-commit==${PRE_COMMIT_VERSION} \
+    && python3 -m pipx install --pip-args=--no-cache-dir tox==${TOX_VERSION}
 
 WORKDIR /app
 CMD ["python3"]

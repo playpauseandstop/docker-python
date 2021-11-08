@@ -1,41 +1,48 @@
 # docker-python
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/playpauseandstop/docker-python.svg)
-![Docker Pulls](https://img.shields.io/docker/pulls/playpauseandstop/docker-python.svg)
+[![CI](https://github.com/playpauseandstop/docker-python/actions/workflows/ci.yml/badge.svg)](https://github.com/playpauseandstop/docker-python/actions/workflows/ci.yml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/playpauseandstop/docker-python.svg)](https://hub.docker.com/r/playpauseandstop/docker-python)
 
-Add poetry, pre-commit, and other dev-tools to official Python slim Docker
-image.
+Add poetry, pre-commit and tox installed via pipx as well as other system dev tools to official Python slim Docker image.
 
 ## Usage
 
 ```dockerfile
-FROM playpauseandstop/docker-python:4.3.0
+FROM playpauseandstop/docker-python:5.0.0
 ```
 
 ### Included dev-tools
 
-- [pip](https://pip.pypa.io) 21.1.1
-- [poetry](https://python-poetry.org) 1.1.6
-- [pre-commit](https://pre-commit.com) 2.12.1
-- [tox](https://tox.readthedocs.io/) 3.23.0
-- [virtualenv](https://virtualenv.pypa.io) 20.4.4
-- [curl](https://curl.haxx.se) 7.64.0
-- [gcc & g++](https://gcc.gnu.org) 8.3.0
-- [git](https://git-scm.com) 2.20.1
+- [pip](https://pip.pypa.io) 21.3.1
+- [pipx](https://pypa.github.io/pipx/) 0.16.4
+- [poetry](https://python-poetry.org) 1.1.11
+- [pre-commit](https://pre-commit.com) 2.15.0
+- [tox](https://tox.readthedocs.io/) 3.24.2
+- [virtualenv](https://virtualenv.pypa.io) 20.10.0
+- [curl](https://curl.haxx.se) 7.74.0
+- [gcc & g++](https://gcc.gnu.org) 10.2.1
+- [git](https://git-scm.com) 2.30.2
 - [locales](https://packages.debian.org/stretch/locales) &
   [locales-all](https://packages.debian.org/stretch/locales-all)
-- [make](https://www.gnu.org/software/make) 4.2.1
-- [nano](https://www.nano-editor.org) 3.2
-- [gettext](https://www.gnu.org/software/gettext) 0.19.8.1
-- [openssh-client](https://packages.debian.org/stretch/openssh-client) 7.9p1
-- [rsync](https://rsync.samba.org) 3.1.3
+- [make](https://www.gnu.org/software/make) 4.3
+- [nano](https://www.nano-editor.org) 5.4
+- [gettext](https://www.gnu.org/software/gettext) 0.21
+- [openssh-client](https://packages.debian.org/stretch/openssh-client) 8.4p1
+- [rsync](https://rsync.samba.org) 3.2.3
 
 ### Python versions
 
-By default, `docker-python` image uses latest stable Python version. But some
-other versions supported as well.
+By default, `docker-python` image uses latest stable Python version. But some other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image)
+
+#### 5.0.0
+
+- `py310` -> `python:3.10.0-slim-bullseye`
+- `py39` -> `python:3.9.7-slim-bullseye`
+- `py38` -> `python:3.8.12-slim-bullseye`
+- `py37` -> `python:3.7.12-slim-bullseye`
+- `py36` -> `python:3.6.15-slim-bullseye`
 
 #### 4.3.0
 
@@ -146,10 +153,4 @@ To run something, using built image:
 
 ```bash
 make ARGS="..." run
-```
-
-To push image (of specific tag):
-
-```bash
-make TAG="..." deploy
 ```
