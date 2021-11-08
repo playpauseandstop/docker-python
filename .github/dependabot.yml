@@ -1,12 +1,26 @@
 version: 2
 updates:
-- package-ecosystem: docker
-  directory: "/"
-  schedule:
-    interval: monthly
-    time: "03:00"
-  open-pull-requests-limit: 10
-  reviewers:
-  - playpauseandstop
-  assignees:
-  - playpauseandstop
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      time: "03:00"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "playpauseandstop"
+    labels:
+      - "build"
+      - "dependencies"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      time: "05:00"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "playpauseandstop"
+    labels:
+      - "build"
+      - "dependencies"
+      - "ci"
