@@ -1,10 +1,9 @@
 # docker-python
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/playpauseandstop/docker-python.svg)
-![Docker Pulls](https://img.shields.io/docker/pulls/playpauseandstop/docker-python.svg)
+[![CI](https://github.com/playpauseandstop/docker-python/actions/workflows/ci.yml/badge.svg)](https://github.com/playpauseandstop/docker-python/actions/workflows/ci.yml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/playpauseandstop/docker-python.svg)](https://hub.docker.com/r/playpauseandstop/docker-python)
 
-Add poetry, pre-commit, and other dev-tools installed via pipx to official
-Python slim Docker image.
+Add poetry, pre-commit, and other dev-tools installed via pipx to official Python slim Docker image.
 
 ## Usage
 
@@ -33,8 +32,7 @@ FROM playpauseandstop/docker-python:5.0.0
 
 ### Python versions
 
-By default, `docker-python` image uses latest stable Python version. But some
-other versions supported as well.
+By default, `docker-python` image uses latest stable Python version. But some other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image)
 
@@ -155,10 +153,4 @@ To run something, using built image:
 
 ```bash
 make ARGS="..." run
-```
-
-To push image (of specific tag):
-
-```bash
-make TAG="..." deploy
 ```
