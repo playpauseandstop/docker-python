@@ -1,0 +1,2 @@
+[tool.badabump]
+tag_format = "{version}"

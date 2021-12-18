@@ -15,8 +15,8 @@ FROM playpauseandstop/docker-python:5.0.0
 
 - [pip](https://pip.pypa.io) 21.3.1
 - [pipx](https://pypa.github.io/pipx/) 0.16.4
-- [poetry](https://python-poetry.org) 1.1.11
-- [pre-commit](https://pre-commit.com) 2.15.0
+- [poetry](https://python-poetry.org) 1.1.12
+- [pre-commit](https://pre-commit.com) 2.16.0
 - [tox](https://tox.readthedocs.io/) 3.24.2
 - [virtualenv](https://virtualenv.pypa.io) 20.10.0
 - [curl](https://curl.haxx.se) 7.74.0
@@ -35,6 +35,12 @@ FROM playpauseandstop/docker-python:5.0.0
 By default, `docker-python` image uses latest stable Python version. But some other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image)
+
+#### 5.1.0
+
+- `py310` -> `python:3.10.1-slim-bullseye`
+- `py39` -> `python:3.9.9-slim-bullseye`
+- `py38`, `py37` & `py36` use same base image as in `5.0.0`
 
 #### 5.0.0
 

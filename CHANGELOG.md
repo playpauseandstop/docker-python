@@ -1,3 +1,10 @@
+# 5.1.0 (2021-12-19)
+
+- Update `py310` image to Python 3.10.1
+- Update `py39` image to Python 3.9.9
+- Update poetry to 1.1.12
+- Update pre-commit to 2.16.0
+
 # 5.0.0 (2021-11-08)
 
 Update default Python version to use to 3.10.0, as well as use latest `slim-bullseye` image instead of `slim-buster`.
