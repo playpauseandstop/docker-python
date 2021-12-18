@@ -1,4 +1,4 @@
-FROM python:3.9.7-slim-bullseye as python-base
+FROM python:3.9.9-slim-bullseye as python-base
 
 LABEL maintainer="Igor Davydenko <iam@igordavydenko.com>"
 LABEL description="Add poetry, pre-commit and tox installed via pipx as well as other system dev tools to official Python slim Docker image."
@@ -37,8 +37,8 @@ ENV PATH="/root/.local/bin:${PATH}"
 # ```
 ENV PIP_VERSION="21.3.1"
 ENV PIPX_VERSION="0.16.4"
-ENV POETRY_VERSION="1.1.11"
-ENV PRE_COMMIT_VERSION="2.15.0"
+ENV POETRY_VERSION="1.1.12"
+ENV PRE_COMMIT_VERSION="2.16.0"
 ENV TOX_VERSION="3.24.4"
 ENV VIRTUALENV_VERSION="20.10.0"
 
