@@ -23,27 +23,29 @@ RUN apt-get update -qq \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get autoremove -y
 
-# Update path to include `/root/.local/bin` for `pip install --user ...` and
-# `pipx` needs
-ENV PATH="/root/.local/bin:${PATH}"
+# Setup pipx and update `PATH` to include `/opt/pipx/bin` for applications
+# installed via `pipx`
+ENV PIPX_HOME="/opt/pipx/venvs"
+ENV PIPX_BIN_DIR="/opt/pipx/bin"
+ENV PATH="${PIPX_BIN_DIR}:${PATH}"
 
-# Update pip to latest version, install pipx & virtualen into user directory,
-# and install additional dev-tools via pipx into `~/.local`
+# Update pip to latest version, install pipx & virtualenv into the system,
+# and install additional dev-tools via pipx into `PIPX_BIN_DIR`
 #
 # To check latest versions,
 #
 # ```bash
 # pip-latest-release pip pipx poetry pre-commit tox virtualenv
 # ```
-ENV PIP_VERSION="21.3.1"
-ENV PIPX_VERSION="0.16.4"
-ENV POETRY_VERSION="1.1.12"
-ENV PRE_COMMIT_VERSION="2.16.0"
-ENV TOX_VERSION="3.24.4"
-ENV VIRTUALENV_VERSION="20.10.0"
+#
+ENV PIP_VERSION="22.0.3"
+ENV PIPX_VERSION="1.0.0"
+ENV POETRY_VERSION="1.1.13"
+ENV PRE_COMMIT_VERSION="2.17.0"
+ENV TOX_VERSION="3.24.5"
+ENV VIRTUALENV_VERSION="20.13.1"
 
-RUN python3 -m pip install --no-cache-dir pip==${PIP_VERSION} \
-    && python3 -m pip install --no-cache-dir --user pipx==${PIPX_VERSION} virtualenv==${VIRTUALENV_VERSION} \
+RUN python3 -m pip install --no-cache-dir pip==${PIP_VERSION} pipx==${PIPX_VERSION} virtualenv==${VIRTUALENV_VERSION} \
     && python3 -m pipx install --pip-args=--no-cache-dir poetry==${POETRY_VERSION} \
     && python3 -m pipx install --pip-args=--no-cache-dir pre-commit==${PRE_COMMIT_VERSION} \
     && python3 -m pipx install --pip-args=--no-cache-dir tox==${TOX_VERSION}

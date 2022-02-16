@@ -1,3 +1,15 @@
+# 5.2.0 (2022-02-16)
+
+- **BREAKING CHANGE:** Do not install `pipx` into user site-packages, install it into the system site-packages and configure to use `/opt/pipx` for venvs and binaries
+- Update `py310` image to Python 3.10.2
+- Update `py39` image to Python 3.9.10
+- Update pip to 22.0.3
+- Update pipx to 1.0.0
+- Update poetry to 1.1.13
+- Update pre-commit to 2.17.0
+- Update tox to 3.24.5
+- Update virtualenv to 20.13.1
+
 # 5.1.0 (2021-12-19)
 
 - Update `py310` image to Python 3.10.1
