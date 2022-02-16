@@ -8,7 +8,7 @@ Add poetry, pre-commit and tox installed via pipx as well as other system dev to
 ## Usage
 
 ```dockerfile
-FROM playpauseandstop/docker-python:5.0.0
+FROM playpauseandstop/docker-python:5.2.0
 ```
 
 ### Included dev-tools
