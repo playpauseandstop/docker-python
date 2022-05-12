@@ -10,7 +10,7 @@ on:
 
 env:
   BADABUMP_VERSION: "21.3.3"
-  PYTHON_VERSION: "3.10.2"
+  PYTHON_VERSION: "3.10.4"
   PYTHONUNBUFFERED: "1"
 
 jobs:
@@ -27,13 +27,13 @@ jobs:
           app_id: "${{ secrets.BADABUMP_APP_ID }}"
           private_key: "${{ secrets.BADABUMP_APP_PRIVATE_KEY }}"
 
-      - uses: "actions/checkout@v2.4.0"
+      - uses: "actions/checkout@v3.0.2"
         with:
           ref: "master"
           token: "${{ steps.token.outputs.token }}"
 
       - name: "Install Python"
-        uses: "actions/setup-python@v2.3.1"
+        uses: "actions/setup-python@v3.1.2"
         with:
           python-version: "${{ env.PYTHON_VERSION }}"
 
