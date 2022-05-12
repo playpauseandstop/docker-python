@@ -1,3 +1,14 @@
+# 5.3.0 (2022-05-12)
+
+- Update `py310` image to Python 3.10.4
+- Update `py39` image to Python 3.9.12
+- Update `py38` image to Python 3.8.13
+- Update `py37` image to Python 3.7.13
+- Update pip to 22.1
+- Update pre-commit to 2.19.0
+- Update tox to 3.25.0
+- Update virtualenv to 20.14.1
+
 # 5.2.0 (2022-02-16)
 
 - **BREAKING CHANGE:** Do not install `pipx` into user site-packages, install it into the system site-packages and configure to use `/opt/pipx` for venvs and binaries

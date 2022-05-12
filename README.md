@@ -8,17 +8,17 @@ Add poetry, pre-commit and tox installed via pipx as well as other system dev to
 ## Usage
 
 ```dockerfile
-FROM playpauseandstop/docker-python:5.2.0
+FROM playpauseandstop/docker-python:5.3.0
 ```
 
 ### Included dev-tools
 
-- [pip](https://pip.pypa.io) 22.0.3
+- [pip](https://pip.pypa.io) 22.1
 - [pipx](https://pypa.github.io/pipx/) 1.0.0
 - [poetry](https://python-poetry.org) 1.1.13
-- [pre-commit](https://pre-commit.com) 2.17.0
-- [tox](https://tox.readthedocs.io/) 3.24.5
-- [virtualenv](https://virtualenv.pypa.io) 20.13.1
+- [pre-commit](https://pre-commit.com) 2.19.0
+- [tox](https://tox.readthedocs.io/) 3.25.0
+- [virtualenv](https://virtualenv.pypa.io) 20.14.1
 - [curl](https://curl.haxx.se) 7.74.0
 - [gcc & g++](https://gcc.gnu.org) 10.2.1
 - [git](https://git-scm.com) 2.30.2
@@ -35,6 +35,14 @@ FROM playpauseandstop/docker-python:5.2.0
 By default, `docker-python` image uses latest stable Python version. But some other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image)
+
+#### 5.3.0
+
+- `py310` -> `python:3.10.4-slim-bullseye`
+- `py39` -> `python:3.9.12-slim-bullseye`
+- `py38` -> `python:3.8.13-slum-bullseye`
+- `py37` -> `python:3.7.13-slum-bullseye`
+- `py36` uses same base image as in `5.0.0`
 
 #### 5.2.0
 
