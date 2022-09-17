@@ -1,3 +1,22 @@
+# 6.0.0 (2022-09-17)
+
+Update default image to use Python 3.11.0rc2, which hopefully allows image users better prepare to stable 3.11.0 release.
+
+As well as deprecate `py36` flavour altogether, good bye, old friend! It was a great ride!
+
+- **BREAKING CHANGE:** Use Python 3.11.0rc2 as base image
+- **BREAKING CHANGE:** Discount `py36` flavour
+- **BREAKING CHANGE:** Update poetry to 1.2.1
+- Update `py310` image to 3.10.7
+- Update `py39` image to 3.9.14
+- Update `py38` image to 3.8.14
+- Update `py37` image to 3.7.14
+- Update pip to 22.2.2
+- Update pipx to 1.1.0
+- Update pre-commit to 2.20.0
+- Update tox to 3.26.0
+- Update virtualenv to 20.16.5
+
 # 5.3.0 (2022-05-12)
 
 - Update `py310` image to Python 3.10.4
