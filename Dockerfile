@@ -38,12 +38,12 @@ ENV PATH="${PIPX_BIN_DIR}:${PATH}"
 # pip-latest-release pip pipx poetry pre-commit tox virtualenv
 # ```
 #
-ENV PIP_VERSION="22.1"
-ENV PIPX_VERSION="1.0.0"
-ENV POETRY_VERSION="1.1.13"
-ENV PRE_COMMIT_VERSION="2.19.0"
-ENV TOX_VERSION="3.25.0"
-ENV VIRTUALENV_VERSION="20.14.1"
+ENV PIP_VERSION="22.2.2"
+ENV PIPX_VERSION="1.1.0"
+ENV POETRY_VERSION="1.2.1"
+ENV PRE_COMMIT_VERSION="2.20.0"
+ENV TOX_VERSION="3.26.0"
+ENV VIRTUALENV_VERSION="20.16.5"
 
 RUN python3 -m pip install --no-cache-dir pip==${PIP_VERSION} pipx==${PIPX_VERSION} virtualenv==${VIRTUALENV_VERSION} \
     && python3 -m pipx install --pip-args=--no-cache-dir poetry==${POETRY_VERSION} \
