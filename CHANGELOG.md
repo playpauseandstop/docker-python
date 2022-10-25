@@ -1,3 +1,16 @@
+# 6.1.0 (2022-10-25)
+
+`py311` image now uses **stable** Python 3.11.0 version.
+
+- Update `py311` image to Python 3.11.0
+- Update `py310` image to Python 3.10.8
+- Update `py39` image to Python 3.9.15
+- Update `py38` image to Python 3.8.15
+- Update `py37` image to Python 3.7.15
+- Update pip to 22.3
+- Update poetry to 1.2.2
+- Update virtualenv to 20.16.6
+
 # 6.0.0 (2022-09-17)
 
 Update default image to use Python 3.11.0rc2, which hopefully allows image users better prepare to stable 3.11.0 release.
