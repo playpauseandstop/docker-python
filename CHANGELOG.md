@@ -1,16 +1,3 @@
-# 6.2.0 (2023-01-09)
-
-- Update `py311` image to Python 3.11.1
-- Update `py310` image to Python 3.10.9
-- Update `py39` image to Python 3.9.16
-- Update `py38` image to Python 3.8.16
-- Update `py37` image to Python 3.7.16
-- Update pip to 22.3.1
-- **POSSIBLE BREAKING CHANGE:** Update poetry to 1.3.1
-- Update pre-commit to 2.21.0
-- **POSSIBLE BREAKING CHANGE:** Update tox to 4.2.6
-- Update virtualenv to 20.17.1
-
 # 6.1.0 (2022-10-25)
 
 `py311` image now uses **stable** Python 3.11.0 version.
