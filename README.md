@@ -13,12 +13,12 @@ FROM playpauseandstop/docker-python:6.1.0
 
 ### Included dev-tools
 
-- [pip](https://pip.pypa.io) 22.3
+- [pip](https://pip.pypa.io) 22.3.1
 - [pipx](https://pypa.github.io/pipx/) 1.1.0
-- [poetry](https://python-poetry.org) 1.2.2
-- [pre-commit](https://pre-commit.com) 2.20.0
-- [tox](https://tox.readthedocs.io/) 3.26.0
-- [virtualenv](https://virtualenv.pypa.io) 20.16.6
+- [poetry](https://python-poetry.org) 1.3.1
+- [pre-commit](https://pre-commit.com) 2.21.0
+- [tox](https://tox.readthedocs.io/) 4.2.6
+- [virtualenv](https://virtualenv.pypa.io) 20.17.1
 - [curl](https://curl.haxx.se) 7.74.0
 - [gcc & g++](https://gcc.gnu.org) 10.2.1
 - [git](https://git-scm.com) 2.30.2
