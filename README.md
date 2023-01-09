@@ -8,17 +8,17 @@ Add poetry, pre-commit and tox installed via pipx as well as other system dev to
 ## Usage
 
 ```dockerfile
-FROM playpauseandstop/docker-python:6.1.0
+FROM playpauseandstop/docker-python:6.2.0
 ```
 
 ### Included dev-tools
 
-- [pip](https://pip.pypa.io) 22.3
+- [pip](https://pip.pypa.io) 22.3.1
 - [pipx](https://pypa.github.io/pipx/) 1.1.0
-- [poetry](https://python-poetry.org) 1.2.2
-- [pre-commit](https://pre-commit.com) 2.20.0
-- [tox](https://tox.readthedocs.io/) 3.26.0
-- [virtualenv](https://virtualenv.pypa.io) 20.16.6
+- [poetry](https://python-poetry.org) 1.3.1
+- [pre-commit](https://pre-commit.com) 2.21.0
+- [tox](https://tox.readthedocs.io/) 4.2.6
+- [virtualenv](https://virtualenv.pypa.io) 20.17.1
 - [curl](https://curl.haxx.se) 7.74.0
 - [gcc & g++](https://gcc.gnu.org) 10.2.1
 - [git](https://git-scm.com) 2.30.2
@@ -35,6 +35,14 @@ FROM playpauseandstop/docker-python:6.1.0
 By default, `docker-python` image uses latest stable Python version. But some other versions supported as well.
 
 List of supported Python versions are (`<PY_VERSION>` -> base Docker image)
+
+#### 6.2.0
+
+- `py311` -> `python:3.11.1-slim-bullseye`
+- `py310` -> `python:3.10.9-slim-bullseye`
+- `py39` -> `python:3.9.16-slim-bullseye`
+- `py38` -> `python:3.8.16-slim-bullseye`
+- `py37` -> `python:3.7.16-slim-bullseye`
 
 #### 6.1.0
 
@@ -188,5 +196,11 @@ make
 To run something, using built image:
 
 ```bash
-make ARGS="..." run
+make run ARGS="..."
+```
+
+To list latest versions of Python dev tools, included in the image (this is useful for updating versions in `Dockerfile`):
+
+```bash
+make list-versions
 ```
