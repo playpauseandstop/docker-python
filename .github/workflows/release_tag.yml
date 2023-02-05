@@ -9,8 +9,8 @@ on:
     types: ["closed"]
 
 env:
-  BADABUMP_VERSION: "21.3.3"
-  PYTHON_VERSION: "3.10.4"
+  BADABUMP_VERSION: "22.1.0"
+  PYTHON_VERSION: "3.11.1"
   PYTHONUNBUFFERED: "1"
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - id: "token"
-        uses: "tibdex/github-app-token@v1.8"
+        uses: "tibdex/github-app-token@v1.8.0"
         with:
           app_id: "${{ secrets.BADABUMP_APP_ID }}"
           private_key: "${{ secrets.BADABUMP_APP_PRIVATE_KEY }}"
