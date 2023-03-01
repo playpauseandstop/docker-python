@@ -1,4 +1,4 @@
-FROM python:3.11.1-slim-bullseye as python-base
+FROM python:3.11.2-slim-bullseye as python-base
 
 LABEL maintainer="Igor Davydenko <iam@igordavydenko.com>"
 LABEL description="Add poetry, pre-commit and tox installed via pipx as well as other system dev tools to official Python slim Docker image."
