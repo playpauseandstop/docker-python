@@ -1,4 +1,4 @@
-FROM python:3.8.16-slim-bullseye as python-base
+FROM python:3.8.18-slim-bullseye as python-base
 
 LABEL maintainer="Igor Davydenko <iam@igordavydenko.com>"
 LABEL description="Add poetry, pre-commit and tox installed via pipx as well as other system dev tools to official Python slim Docker image."
@@ -38,12 +38,12 @@ ENV PATH="${PIPX_BIN_DIR}:${PATH}"
 # ./scripts/pip-latest-release.sh pip pipx poetry pre-commit tox virtualenv
 # ```
 #
-ENV PIP_VERSION="22.3.1"
-ENV PIPX_VERSION="1.1.0"
-ENV POETRY_VERSION="1.3.1"
-ENV PRE_COMMIT_VERSION="2.21.0"
-ENV TOX_VERSION="4.2.6"
-ENV VIRTUALENV_VERSION="20.17.1"
+ENV PIP_VERSION="23.3.2"
+ENV PIPX_VERSION="1.4.3"
+ENV POETRY_VERSION="1.7.1"
+ENV PRE_COMMIT_VERSION="3.6.0"
+ENV TOX_VERSION="4.12.1"
+ENV VIRTUALENV_VERSION="20.25.0"
 
 RUN python3 -m pip install --no-cache-dir pip==${PIP_VERSION} pipx==${PIPX_VERSION} virtualenv==${VIRTUALENV_VERSION} \
     && python3 -m pipx install --pip-args=--no-cache-dir poetry==${POETRY_VERSION} \
