@@ -13,22 +13,22 @@ FROM playpauseandstop/docker-python:6.2.0
 
 ### Included dev-tools
 
-- [pip](https://pip.pypa.io) 22.3.1
-- [pipx](https://pypa.github.io/pipx/) 1.1.0
-- [poetry](https://python-poetry.org) 1.3.1
-- [pre-commit](https://pre-commit.com) 2.21.0
-- [tox](https://tox.readthedocs.io/) 4.2.6
-- [virtualenv](https://virtualenv.pypa.io) 20.17.1
-- [curl](https://curl.haxx.se) 7.74.0
-- [gcc & g++](https://gcc.gnu.org) 10.2.1
-- [git](https://git-scm.com) 2.30.2
+- [pip](https://pip.pypa.io) 23.3.2
+- [pipx](https://pypa.github.io/pipx/) 1.4.3
+- [poetry](https://python-poetry.org) 1.7.1
+- [pre-commit](https://pre-commit.com) 3.6.0
+- [tox](https://tox.readthedocs.io/) 4.12.1
+- [virtualenv](https://virtualenv.pypa.io) 20.25.0
+- [curl](https://curl.haxx.se) 7.88.1
+- [gcc & g++](https://gcc.gnu.org) 12.2.0
+- [git](https://git-scm.com) 2.39.2
 - [locales](https://packages.debian.org/stretch/locales) &
   [locales-all](https://packages.debian.org/stretch/locales-all)
 - [make](https://www.gnu.org/software/make) 4.3
-- [nano](https://www.nano-editor.org) 5.4
+- [nano](https://www.nano-editor.org) 7.2
 - [gettext](https://www.gnu.org/software/gettext) 0.21
 - [openssh-client](https://packages.debian.org/stretch/openssh-client) 8.4p1
-- [rsync](https://rsync.samba.org) 3.2.3
+- [rsync](https://rsync.samba.org) 3.2.7
 
 ### Python versions
 
