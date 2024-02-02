@@ -1,3 +1,22 @@
+# 7.0.0 (2024-02-02)
+
+Update default image to use Python 3.12.1 **bookworm** image.
+
+As well as deprecate `py37` flavour, bye, bye, ole sport!
+
+- **BREAKING CHANGE:** Use Python 3.12.1 as base image
+- **BREAKING CHANGE:** Use **bookworm** Debian **for all active flavours** instead of _bullseye_
+- **BREAKING CHANGE:** Discount `py37` flavour
+- Update `py311` image to Python 3.11.7
+- Update `py310` image to Python 3.10.13
+- Update `py39` image to Python 3.9.18
+- Update `py38` image to Python 3.8.18
+- Update pip to 23.3.2
+- Update pipx to 1.4.3
+- **POSSIBLE BREAKING CHANGE:** Update poetry to 1.7.1
+- Update tox to 4.12.1
+- Update virtualenv to 20.25.0
+
 # 6.2.0 (2023-01-09)
 
 - Update `py311` image to Python 3.11.1
